@@ -163,7 +163,7 @@ describe("POST /v1/user", () => {
 });
 describe("PUT /v1/user", () => {
 
-	test('should respond with 200 for correct user updation', async () => {
+	test('should respond with 200 or 204 for correct user updation', async () => {
 		const data = {
 			username: "user1",
 			score: 100
@@ -173,7 +173,7 @@ describe("PUT /v1/user", () => {
 			.set('Content-Type', 'application/json')
 			.set('Authorization', `${TOKEN}`).send(data);
 
-		expect(res.statusCode).toBe(200);
+		expect(res.statusCode).toBe(204);
 		expect(res.body.error).toBeUndefined();
 
 		const get_response = await request.get("/v1/user")
