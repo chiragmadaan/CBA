@@ -1,4 +1,6 @@
 var webdriver = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
+const firefox = require('selenium-webdriver/firefox');
 const {By} = require('selenium-webdriver');
 var driver = new webdriver.Builder().forBrowser('chrome').build();
 driver.manage().setTimeouts({implicit: (10000)});
