@@ -21,6 +21,9 @@ npm test frontend_tests
 npm test api_tests
 ```
 
+## CI Setup
+[https://github.com/chiragmadaan/CBA/actions](https://github.com/chiragmadaan/CBA/actions)
+
 ## Bugs logged
 [https://github.com/ale-sanchez-g/villain/issues/20](https://github.com/ale-sanchez-g/villain/issues/20)  
 [https://github.com/ale-sanchez-g/villain/issues/21](https://github.com/ale-sanchez-g/villain/issues/21)  
