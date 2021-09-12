@@ -15,3 +15,15 @@ jobs:
         run: |
           npm install
           npm test api_tests
+  
+  frontend-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 15
+      - name: npm install and test UI
+        run: |
+          npm install
+          npm test frontend_tests
