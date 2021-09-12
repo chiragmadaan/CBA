@@ -1,6 +1,7 @@
 name: CI for CBA COVID19 Game
 
-on: [push]
+on:
+  workflow_dispatch
 
 jobs:
   
